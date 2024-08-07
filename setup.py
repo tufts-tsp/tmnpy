@@ -1,5 +1,9 @@
 from setuptools import setup
 
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
+
 setup(
     name="tmnpy",
     version="0.0.0",
@@ -22,4 +26,5 @@ setup(
             "reference_data/catalog.yaml",
         ]
     },
+    install_requires=requirements
 )
