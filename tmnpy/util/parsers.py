@@ -15,6 +15,19 @@ class Parser(object):
 
 
 class TMNTParser(Parser):
+
+    """
+    The TMNTParser is a parser that takes in a YAML file and converts it into 
+    a threat model with its corresponding DSL objects. 
+
+    Parameters
+    ----------
+    tm_name: str
+        Name of the threat model
+    yaml: str
+        File path of the YAML file that describes the threat model
+    """
+
     def __init__(self, tm_name: str, yaml: str):
         self.yaml = self.load_yaml(yaml)
         self.tm = TM(tm_name)

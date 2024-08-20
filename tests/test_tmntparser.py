@@ -30,7 +30,7 @@ class TestTMNTParser(unittest.TestCase):
 
         self.assertEqual(name, "Surgeon")
         self.assertEqual(actor_type, "Individual")
-        self.assertEqual(physical_access, True)
+        self.assertEqual(physical_access, [])
 
     def test_parse_asset(self):
         asset_data = [
