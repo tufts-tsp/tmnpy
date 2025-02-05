@@ -184,3 +184,22 @@ class Process(Asset):
 
     def __init__(self, name, **kwargs):
         super().__init__(name, **kwargs)
+
+
+class Server(Asset):
+
+    """
+    needs documentation
+    """
+
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
+
+class Lambda(Asset):
+
+    """
+    needs documentation
+    """
+
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)

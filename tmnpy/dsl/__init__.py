@@ -20,6 +20,8 @@ __all__ = [
     "ExternalEntity",
     "Datastore",
     "Process",
+    "Server",
+    "Lambda",
     "TM",
 ]
 from .requirement import STRIDE, SecurityProperty, SafetyImpact, PatientHarm
@@ -30,5 +32,5 @@ from .threat import Issue, Weakness, Threat, Vulnerability
 from .control import Control, ControlCatalog
 from .finding import Finding
 from .flow import Flow, DataFlow, WorkFlow
-from .asset import Asset, ExternalEntity, Datastore, Process
+from .asset import Asset, ExternalEntity, Datastore, Process, Lambda, Server
 from .tm import TM
